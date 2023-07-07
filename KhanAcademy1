@@ -1,0 +1,23 @@
+# SQLPortfolio
+This is my SQL portfolio. 
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, item_type TEXT, size TEXT, quantity INTEGER, price INTEGER, color TEXT);
+
+INSERT into clothing VALUES (1, "Pants", "M", 5, 8.00, "red");
+INSERT into clothing VALUES (2, "Dress", "L", 5, 10.00, "pink");
+INSERT into clothing VALUES (3, "Shirt", "S", 2, 5.00, "white");
+INSERT into clothing VALUES (4, "Skirt", "M", 3, 10.00, "black");
+INSERT into clothing VALUES (5, "Shorts", "L", 5, 10.00, "green");
+INSERT into clothing VALUES (6, "Underwear", "S", 5, 2.99, "yellow");
+INSERT into clothing VALUES (7, "Pants", "L", 5, 8.00, "blue");
+INSERT into clothing VALUES (8, "Pants", "XL", 5, 8.00, "blue");
+INSERT into clothing VALUES (9, "Dress", "XL", 5, 10.00, "red");
+INSERT into clothing VALUES (10, "Shirt", "M", 5, 10.00, "purple");
+INSERT into clothing VALUES (11, "Shirt", "L", 5, 10.00, "pink");
+INSERT into clothing VALUES (12, "Shorts", "M", 5, 8.00, "pink");
+INSERT into clothing VALUES (13, "Shorts", "S", 5, 10.00, "black");
+INSERT into clothing VALUES (14, "Socks", "M", 10, 2.00, "white");
+INSERT into clothing VALUES (15, "Socks", "S", 10, 2.00, "white");
+
+SELECT * From clothing
+ORDER by price;
+SELECT SUM(quantity) FROM clothing;
